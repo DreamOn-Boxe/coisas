@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rouge+Script&display=swap'); 
+</style>
+*/
+{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ad0303;
+    height: 80px;
+   
+}
+
+header h1{
+    font-size: 40px;
+    color: white;
+        font-family: "Rouge Script", cursive;
+        font-weight: normal;
+ }
+      
+
+    .hero{
+    display: flex;
+   justify-content: center;
+   align-items: center;  
+   width: 100%;
+   /* border:1px solid orange ; */
+    }
+
+.box-img{
+display: flex;
+justify-content: center;
+width: 35%;
+height: 300px;
+/* border: 1px solid black; */
+
+}
+
+.box-txt{
+    display: flex;
+    flex-flow:row wrap;
+    width: 35%;
+    height: 600px;
+    /* border: 1px solid gray; */
+    
+    }
+.box-txt span{
+    color: darkblue;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}   
+
+.box-txt h2{
+    font-family: "DM Sans", sans-serif;
+    font-size: 80px;
+    color: blue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+
+}
+
+.box-txt p{
+    color: gray;
+    margin-bottom: 30px;
+
+}
+
+.btn-hero{
+    background-color: blue;
+    /* padding: 20px 15px; */
+    /* width:100px; */
+    text-align: center;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+
+}
+
+
+.btn-hero:hover{
+    background-color: rgb(8, 169, 8);
+    font-size: 18px;
+}
+
+.box-item{
+    width: 26%;
+    height: 380px;
+    background-color: #ad0303;
+    margin: 5px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.ideologia{
+    display: flex;
+   justify-content: center;
+   align-items: center;  
+   flex-flow: row wrap;
+   width: 80%;
+   margin-left: 10%;
+
+   /* border:1px solid orange ; */
+    }
+
+    .m-top{
+        margin-top: 30px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:100px; 
+         background: #ad0303;
+        height: 70px;
+        color: white;
+        font-size: 22px ;
+    }
+
+    .contato{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    @media screen and (max-width:1200px) {
+
+        header h1{
+            font-size: 45px;
+        }
+        .hero{
+            flex-direction: column-reverse;
+        }
+        .box-item {
+           flex-flow: column wrap;
+            width: 100%;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 30px;
+            
+        }
+        
+        .box-txt h2{
+            font-size: 60px;
+
+        }
+        
+        .box-txt p {
+            text-align: center;
+        }
+
+        .box-img {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        .box-item{
+            width: 90%;
+        }
+
+        footer{
+            font: size 18px;
+        }
+    }
